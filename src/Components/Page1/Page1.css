@@ -4,16 +4,20 @@
 }
 
 .Page1 {
-  color: white;
   width: 100vw;
   height: 100vh;
   background-image: url('https://media.giphy.com/media/zW0n7AIWG4ka4/giphy.gif');
   background-repeat: repeat;
+  overflow: hidden;
+}
+
+.screen1 {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  overflow: hidden;
 }
 
 .wordart {

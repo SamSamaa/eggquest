@@ -44,23 +44,33 @@ class Page1 extends Component {
   render() {
     return (
       <div className={'Page1' + (this.state.win ? ' win' : '')}>
-        <img src={wordart} className={'wordart' + (this.state.appearTitle1 ? ' appear' : '')} />
-        <img src={wordart2} className={'wordart2' + (this.state.appearTitle2 ? ' appear' : '')} />
-        <div>
-          <div className='issou'>
-            <button className='ballon' onClick={this.clickedBallon}>x</button>
-          </div>
-          <button className='button' onClick={this.handleClick}>Click me !</button>
-        </div>
-        <div className={'fail-container' + (this.state.clicked ? ' activation' : '')}>
-          <div className='fail'></div>
-        </div>
-        <div className='snoopdog'></div>
-        <div className='clippy'></div>
-        <div className='fire'></div>
-        <div className='obama'></div>
-        <div className='cigarettes'></div>
-        <div className={this.state.explode ? 'explosion' : ''}></div>
+        {
+          this.state.win ?
+            <div className='screen2'>
+
+            </div> 
+            :
+            <div className='screen1'>
+              <img src={wordart} className={'wordart' + (this.state.appearTitle1 ? ' appear' : '')} />
+              <img src={wordart2} className={'wordart2' + (this.state.appearTitle2 ? ' appear' : '')} />
+              <div>
+                <div className='issou'>
+                  <button className='ballon' onClick={this.clickedBallon}>x</button>
+                </div>
+                <button className='button' onClick={this.handleClick}>Click me !</button>
+              </div>
+              <div className={'fail-container' + (this.state.clicked ? ' activation' : '')}>
+                <div className='fail'></div>
+              </div>
+              <div className='snoopdog'></div>
+              <div className='clippy'></div>
+              <div className='fire'></div>
+              <div className='obama'></div>
+              <div className='cigarettes'></div>
+              <div className={this.state.explode ? 'explosion' : ''}></div>
+            </div>
+        }
+
       </div>
     );
   }
