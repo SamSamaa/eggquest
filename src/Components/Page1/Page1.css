@@ -1,0 +1,145 @@
+.Page1 {
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('https://media.giphy.com/media/zW0n7AIWG4ka4/giphy.gif');
+  background-repeat: repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.wordart {
+  width: 50vw;
+  position: absolute;
+  top: -15%;
+  margin-left: -100vw;
+  transition: all 1s ease-in-out;
+}
+
+.wordart2 {
+  width: 50vw;
+  position: absolute;
+  top: 2%;
+  margin-left: 100vw;
+  transition: all 1s ease-in-out;
+}
+
+.appear {
+  margin-left: 0;
+}
+
+.button {
+  border: 8px inset;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 2rem;
+  width: 300px;
+  height: 100px;
+  z-index: 99;
+}
+
+.button:hover {
+  color: white;
+  background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet);
+}
+
+.fail-container {
+  width: 300px;
+  height: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s ease-in-out;
+}
+
+.activation {
+  height: 200px;
+}
+
+.fail {
+  width: 100%;
+  min-height: 100%;
+  background-image: url('https://media.giphy.com/media/15aGGXfSlat2dP6ohs/giphy.gif');
+  background-size: cover;
+}
+
+.snoopdog {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 400px;
+  width: 200px;
+  background-image: url('https://i.gifer.com/6os.gif');
+  background-size: cover;
+}
+
+.clippy {
+  background-image: url('https://i.gifer.com/origin/c6/c6afab251a20e6d0eb80b983450bc66e_w200.gif');
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  background-size: cover;
+}
+
+.fire {
+  background-image: url('https://i.gifer.com/5GpM.gif');
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 100px;
+}
+
+.issou {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  background-image: url('http://image.noelshack.com/fichiers/2017/03/1484679152-risitas-ballon-foot.gif');
+}
+
+.ballon {
+  position: absolute;
+  border-radius: 100%;
+  padding: 60px;
+  top: 2px;
+  left: 2px;
+  opacity: 0;
+}
+
+.explosion {
+  background-image: url('https://media.giphy.com/media/ahza0v6s5pSxy/giphy.gif');
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: calc(50% - 418px);
+  left: calc(50% - 300px);
+  background-size: cover;
+}
+
+.obama {
+  background-image: url('https://www.gif-maniac.com/gifs/50/49561.gif');
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  background-size: cover;
+}
+
+.cigarettes {
+  background-image: url('https://www.gif-maniac.com/gifs/49/49474.gif');
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  background-size: cover;
+}
+
+.win {
+  background-image: url('https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif');
+  background-size: cover;
+}
