@@ -1,0 +1,50 @@
+.bgImage{
+  background-image: url('https://media.giphy.com/media/KeKP4gHnQgYXC/giphy.gif'); 
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  --border-anim: red;
+}
+
+.border{
+  border: 20px ridge;
+  height: 200px;
+  margin-top: 3em;
+  padding: 0px 80px;
+  display: flex;
+  align-items: center;
+  background-image: url('https://thumbs.gfycat.com/AnguishedJauntyBluebreastedkookaburra-max-1mb.gif');
+  animation-name: borderanim;
+  animation-duration: 4s;
+  animation-iteration-count:infinite;
+  animation-direction: alternate;
+}
+
+@keyframes borderanim {
+  0%   {border-color: red;}
+  14%  {border-color: orange;}
+  28%  {border-color: yellow;}
+  42%  {border-color: green;}
+  56%  {border-color: cyan;}
+  70%  {border-color: blue;}
+  84%  {border-color: rgb(240, 12, 240);}
+  100% {border-color: red;}
+}
+
+.title{
+  font-family: "Comic Sans Ms", "Comic Sans", cursive;
+  font-size: 8em;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(30, 255, 0)), to(rgb(255, 0, 0)));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.wow{
+  height: 50vh;
+  width: 50vw;
+  z-index: 5;
+  position:fixed;
+  bottom:0px;
+}
