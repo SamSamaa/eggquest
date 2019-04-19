@@ -1,0 +1,76 @@
+/* .bgStyle{
+    background-image: url('https://media.giphy.com/media/l2JhNN6GcRNr27lmg/giphy.gif');
+    width: 100vw;
+    min-height: 100vh; 
+ }   */
+h1{
+    width: 300px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom:12px; 
+    padding-top: 12px;
+    /* border:5px purple;
+    border-style:dashed double none;
+    padding-left: 5px; */
+}
+.colorP1{
+    color:yellowgreen;
+    font-weight: bold;
+}
+.colorP2{
+    color: yellowgreen;
+    font-weight: bold;
+}
+.colorP3{
+    color:yellowgreen;
+    font-weight: bold;
+}
+.colorP4{
+    color: yellowgreen;
+    font-weight: bold;
+}
+
+/* .btnColor{
+    background-image: url('https://media.giphy.com/media/3ov9jHiEzknijxAD3q/giphy.gif');
+} */
+.btn1{
+    opacity: 0.1;
+}
+.sizeRabbit{
+    height: 65px;
+    width: auto;
+}
+.hiddenRabbit{
+    height: 25px;
+    width:auto;
+}
+.hiddenRabbitPosition{
+    float: right;
+    margin-right: 30px;
+}
+.hiddenRabbitPosition1{
+    float: left;
+    margin-left: 30px;
+}
+.hiddenRabbitPosition2{
+    float: center;
+}
+.imgApi{
+    height: 80px;
+    width:auto;
+    border-radius: 30%;
+}
+.imgMod{
+    height: 250px;
+    width: auto;
+}
+.imgMod1{
+    height: 150px;
+    width: 150px;
+}
+
+.imgRabb{
+    height: 100px;
+    width: auto;
+
+}
