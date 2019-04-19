@@ -108,12 +108,15 @@
 }
 #arrowDown > img {display: block}
 
-.parchemin {
+.divParchemin {
     position: absolute;
-    top:100vh;
-    z-index:8
+    top:95vh;
+    z-index:8;
+    height:20vh;
 }
 
-#MERDE {position: absolute;top:160vw}
+#parchemin {height:80vh;}
 
-/* p {color:black;position: absolute; bottom:25vw;padding: 0 15vw} */
+#MERDE {position: absolute;top:145vw;height:40vh}
+
+#lorem {color:black;position: absolute; top:10vh;padding: 0 15vw;font-size:3vh}

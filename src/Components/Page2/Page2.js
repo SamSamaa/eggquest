@@ -201,7 +201,7 @@ class Page2 extends Component {
                      C, U, I, O, L, L, E, S
                      </p>
                     {this.state.openTestIcule &&
-                        <Link exact to='/page4'><button onClick={this.openVictory}>Next levail bi1 jouai</button></Link>
+                        <Link exact to='/page4'><button onClick={this.openVictory}>Code: MA -> Go to next page!</button></Link>
                     }
 
                     <input onChange={this.handleRes3}></input>

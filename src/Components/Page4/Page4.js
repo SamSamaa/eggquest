@@ -79,7 +79,7 @@ class Page4 extends Component {
             <div className='solution'>
               <img className='etoile' src='https://backgroundcheckall.com/wp-content/uploads/2018/10/christmas-star-png-transparent-background-3.png' alt='etoile' />
               <img className='rick' src='https://media.giphy.com/media/Vuw9m5wXviFIQ/giphy.gif' alt='gif' /><h1>Félicitation</h1>
-              <h3>CODE</h3>
+              <h3>Code : GO</h3>
               <Link exact to='/'><button>Retour à l'accueil</button></Link>
             </div>
           </Modal>

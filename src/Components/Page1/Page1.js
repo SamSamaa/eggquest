@@ -58,6 +58,7 @@ class Page1 extends Component {
         {
           this.state.win ?
             <div className='screen2'>
+              <h1>Code : TA</h1>
               <Link exact to="/page2"><button className='button'>Go to next page!</button></Link>
             </div>
             :

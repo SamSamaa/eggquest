@@ -49,12 +49,12 @@ class Animation extends Component {
                     <img src="http://www.pngnames.com/files/4/Hoodie-Jackets-PNG-Free-Download.png" alt="sweater" className="sweater"/>
                     <img src="https://slack-imgs.com/?c=1&url=https%3A%2F%2Fwww.gif-maniac.com%2Fgifs%2F54%2F53581.gif" alt="welcome" id="welcomeAnim"/>
                     <div id="arrowDown">
-                        <img src="https://media.giphy.com/media/8fteY1fGJDQYg/giphy.gif" alt="arrow"  />
+                        <img src="https://media.giphy.com/media/8fteY1fGJDQYg/giphy.gif" alt="arrow" />
                         <img src="https://media.giphy.com/media/8fteY1fGJDQYg/giphy.gif" alt="arrow" />
                     </div>
-                    <div className="parchemin">
-                        <img src="https://files.slack.com/files-pri/T6SG2QGG2-FHPLNB52N/kisspng-parchment-friendship-bilude-art-parchemin-5b24e8e3a0f5c3.4593189615291455716593.png" alt="rules"/>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis non odit sordidos, vanos, leves, futtiles? Quo minus animus a se ipse dissidens secumque discordans gustare partem ullam liquidae voluptatis et liberae potest. Duo Reges: constructio interrete. Age, inquies, ista parva sunt. Scrupulum, inquam, abeunti.</p>
+                    <div className="divParchemin">
+                        <img id='parchemin' src="https://files.slack.com/files-pri/T6SG2QGG2-FHPLNB52N/kisspng-parchment-friendship-bilude-art-parchemin-5b24e8e3a0f5c3.4593189615291455716593.png" alt="rules"/>
+                        <p id='lorem'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis non odit sordidos, vanos, leves, futtiles? Quo minus animus a se ipse dissidens secumque discordans gustare partem ullam liquidae voluptatis et liberae potest. Duo Reges: constructio interrete. Age, inquies, ista parva sunt. Scrupulum, inquam, abeunti.</p>
                     </div>
                     <div id="MERDE">
                         <Link exact to='/page1'><button>Vas-y!!! cliqu & resolvent ces enimges!</button></Link>
