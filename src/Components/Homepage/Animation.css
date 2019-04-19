@@ -1,0 +1,119 @@
+#parent {
+    background-color: rgb(2, 9, 48);
+    display: flex;
+    width: 100vw;
+    height: 210vh;
+    justify-content: center;
+    position: relative;
+}
+
+#voldemort {
+    position: relative;
+    z-index:0;
+    width:50%;
+    height:50%;
+    display: flex;
+    justify-content: center;
+}
+
+#picsEggs {position: absolute}
+
+.evenEggs {
+	width: 500px;
+	margin: 300px 0 0;
+	transition: all 1s;
+    transform-origin: 50% 50%;
+	transform: rotate(180deg);
+}
+
+.faceVoldemort {
+    height: 90%;
+}
+
+.disclosure {
+    position: absolute;
+    background-color: white;
+    width: 100vw;
+    height: 300vh;
+    margin-top: 0;
+    z-index: 10;
+}
+
+.skull {
+    transition: all 5s;
+    transition-timing-function: steps(17);
+    margin-top: 26vh;
+}
+
+/* Responsive to finish : */
+@media screen and (min-width:410px){
+    #voldemort {height:90vh}
+}
+@media screen and (max-width: 410px){
+    #voldemort {width: 100%;height: auto}
+}
+.glasses {
+    position: absolute;
+    transition: all 1s ease-in-out;
+    z-index:15;
+    top:-40vh;
+}
+.moveGlasses {
+    height:50vh;
+    margin-top: 51vh;
+    margin-right:8vw;
+}
+.joint {
+    position: absolute;
+    display: none;
+    background-size: cover;
+    height:auto;
+    z-index:15;
+    transform:scaleX(-1);
+    height:35vh;
+    margin-top:42vh;
+}
+
+.necklace {
+    position: absolute;
+    background-size: cover;
+    z-index:5;
+    height:30vh;
+    margin-top:65vh;
+    width:50vh;
+}
+
+.sweater {
+    position: absolute;
+    background-size: cover;
+    z-index:-5;
+    height: 150vh;
+    margin-top:55vh;
+}
+
+#welcomeAnim {
+    display: none;
+    position: absolute;
+    left:-25vw;
+    top: 5vw;
+    height: 14vw;
+}
+
+#arrowDown {
+    display: none;
+    position: absolute;
+    right:-25vw;
+    top: 5vw;
+    height: 14vw;
+}
+#arrowDown > img {display: block}
+
+.parchemin {
+    position: absolute;
+    top:100vh;
+    z-index:8
+}
+
+#MERDE {position: absolute;top:160vw}
+
+/* p {color:black;position: absolute; bottom:25vw;padding: 0 15vw} */

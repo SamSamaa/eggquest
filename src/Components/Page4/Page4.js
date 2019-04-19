@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Modal from "react-responsive-modal";
 import FinalZone from './finalzone.png';
 import John from './John.mp3'
@@ -79,7 +80,7 @@ class Page4 extends Component {
               <img className='etoile' src='https://backgroundcheckall.com/wp-content/uploads/2018/10/christmas-star-png-transparent-background-3.png' alt='etoile' />
               <img className='rick' src='https://media.giphy.com/media/Vuw9m5wXviFIQ/giphy.gif' alt='gif' /><h1>Félicitation</h1>
               <h3>CODE</h3>
-              <button>Retour à l'accueil</button>
+              <Link exact to='/'><button>Retour à l'accueil</button></Link>
             </div>
           </Modal>
           <img className='m3' src='http://corigif.free.fr/alphabet/alphaoursbleu/img/alpha_012.gif' alt='lettre' />
