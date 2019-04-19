@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Modal from 'react-responsive-modal';
 import Sound from 'react-sound';
 import ponpon from './ponpon.mp3'
@@ -199,7 +200,7 @@ class Page2 extends Component {
                      C, U, I, O, L, L, E, S
                      </p> 
                      {this.state.openTestIcule &&
-                     <button onClick={this.openVictory}>Next levail bi1 jouai</button>
+                     <Link exact to='/page4'><button onClick={this.openVictory}>Next levail bi1 jouai</button></Link>
                      } 
 
                     <input onChange={this.handleRes3}></input>

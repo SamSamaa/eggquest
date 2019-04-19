@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Voldemort from '../Voldemort/Voldemort';
 import wordart from '../../assets/images/wordart.png';
 import wordart2 from '../../assets/images/wordart2.png';
 import './Page1.css';
@@ -49,7 +48,7 @@ class Page1 extends Component {
           {
             this.state.win ?
               <div className='screen2'>
-                <Link exact to="/voldemort"><button className='button'>Go to next page!</button></Link>
+                <Link exact to="/page2"><button className='button'>Go to next page!</button></Link>
               </div>
               :
               <div className='screen1'>
