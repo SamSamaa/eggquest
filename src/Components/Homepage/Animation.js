@@ -77,7 +77,10 @@ class Animation extends Component {
                     </div>
                     <div className="divParchemin">
                         <img id='parchemin' src="https://files.slack.com/files-pri/T6SG2QGG2-FHPLNB52N/kisspng-parchment-friendship-bilude-art-parchemin-5b24e8e3a0f5c3.4593189615291455716593.png" alt="rules" />
-                        <p id='lorem'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis non odit sordidos, vanos, leves, futtiles? Quo minus animus a se ipse dissidens secumque discordans gustare partem ullam liquidae voluptatis et liberae potest. Duo Reges: constructio interrete. Age, inquies, ista parva sunt. Scrupulum, inquam, abeunti.</p>
+                        <p id='lorem'>
+                            Wesh alors, bien ou bien, c’est partie pour les  les péripétieties la famille , vous allez devoir résolver  des questions incrémenté de réponses,  avec tes yeux tu va kiffé par ce  claquent et , graphisme du turfu !!!
+                            Traduction français classique 
+                            bonjour, bienvenu sur notre application , vous allez devoir résoudre des enigmes, profitez de l’ambiance</p>
                     </div>
                     <div id="MERDE">
                         <Link exact to='/page1'><button>Vas-y!!! clique & résoud ces enimges!</button></Link>
