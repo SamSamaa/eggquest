@@ -132,12 +132,12 @@
   height: 500px;
   display: flex;
   flex-direction: row;
+  background-image: url('https://i.pinimg.com/originals/79/78/fe/7978fe4620e624116664f5d2ff9134b6.jpg');
 }
 
 .fouras {
   height: 500px;
   width: 400px;
-  left: 10px;
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
@@ -164,3 +164,6 @@
   
 }
 
+.superMomodal p{
+  font-size: 25px;
+}
