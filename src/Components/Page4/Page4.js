@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import Modal from "react-responsive-modal";
 import FinalZone from './finalzone.png';
-import './Page4.css';
 import John from './John.mp3'
 import Sound from 'react-sound';
 import fortBoyard from './fortBoyard.mp3'
 import leeroy from './leeroy.mp3'
 import victory from './victory.mp3';
+import './Page4.css';
 
 class Page4 extends Component {
   constructor() {
@@ -57,7 +57,7 @@ class Page4 extends Component {
           loop={true}
         />
         <div className='border'>
-          <img src={FinalZone} alt='titre' />
+          <img className='finalzone' src={FinalZone} alt='titre' />
         </div>
         <div className='enigme'>
           <img className='m1' src='http://corigif.free.fr/alphabet/alphasaignant/img/alpha_016.gif' alt='lettre' />

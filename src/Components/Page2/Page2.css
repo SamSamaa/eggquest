@@ -6,9 +6,16 @@
     min-height: 100vh; 
     font-family: 'VT323', monospace;
     
- }  
+ }
 
-h1 {
+ .question {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+
+.titleQuestion {
     width: 300px;
     margin-left:auto;
     margin-right:auto;
@@ -22,7 +29,7 @@ h1 {
   
 }
 
-p {
+.bgQuestion {
     font-family: 'VT323', monospace;
     color:red;
     text-decoration: underline dotted black;
@@ -34,11 +41,15 @@ p {
 }
 
 .btnColor{
+    max-width: 200px;
     background-image: url('https://media.giphy.com/media/3ov9jHiEzknijxAD3q/giphy.gif');
     box-shadow: 65px plum;
 }
 .btn1{
-    opacity: 0.1;
+    color: white;
+    background-color: red;
+    max-width: 200px;
+    opacity: 0.3;
 }
 .sizeRabbit{
     height: 65px;
