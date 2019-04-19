@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway+Dots|VT323');
 
 .bgStyle{
-    background-image: url('https://media.giphy.com/media/l2JhNN6GcRNr27lmg/giphy.gif');
+    background-image: url('https://media.giphy.com/media/5F3mcP7rzSLss/giphy.gif');
     width: 100vw;
     min-height: 100vh; 
     font-family: 'VT323', monospace;
@@ -26,6 +26,7 @@ p{
     text-decoration: underline dotted black;
     text-shadow: 0 0 0.2em yellow, 0 0 0.1em yellow;
     font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.671);
     /* font-weight: bold; */
 
 }
