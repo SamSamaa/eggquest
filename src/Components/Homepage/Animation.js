@@ -10,7 +10,9 @@ class Animation extends Component {
         this.state={
             skull: false,
             glasses: false,
-            eggs: []
+            eggs: [],
+            password: '',
+            win: false
         }
     }
 
@@ -19,6 +21,14 @@ class Animation extends Component {
         setTimeout(this.hide,7000);
         setTimeout(this.glasses,8000);
         setTimeout(this.stuff,9000)
+    }
+
+    handleTry = () => {
+        if(this.state.password === 'tamago') {
+            this.setState({win: true});
+        } else {
+            this.setState({password: ''});
+        }
     }
 
     skull = () => {
@@ -34,6 +44,9 @@ class Animation extends Component {
         document.getElementsByClassName('joint')[0].style.display="block";
         document.getElementById('arrowDown').style.display="block";
         document.getElementById('welcomeAnim').style.display="block";
+    }
+    handlePassword = (e) => {
+        this.setState({password: e.target.value})
     }
 
     render(){
@@ -57,9 +70,13 @@ class Animation extends Component {
                         <p id='lorem'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis non odit sordidos, vanos, leves, futtiles? Quo minus animus a se ipse dissidens secumque discordans gustare partem ullam liquidae voluptatis et liberae potest. Duo Reges: constructio interrete. Age, inquies, ista parva sunt. Scrupulum, inquam, abeunti.</p>
                     </div>
                     <div id="MERDE">
-                        <Link exact to='/page1'><button>Vas-y!!! cliqu & resolvent ces enimges!</button></Link>
+                        <Link exact to='/page1'><button>Vas-y!!! clique & résoud ces enimges!</button></Link>
                         <br/>
-                        <input placeholder="motQuiPasse"></input>
+                        <input placeholder="motQuiPasse" value={this.state.password} onChange={this.handlePassword}></input>
+                        <button onClick={this.handleTry}>Envoie ta réponse!</button>
+                        {
+                            this.state.win ? <Link exact to='/voldemort'><h2>SECRET SITE</h2></Link> : <div></div>
+                        }
                     </div>
                 </div>
             </div>
