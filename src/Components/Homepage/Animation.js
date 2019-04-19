@@ -8,7 +8,9 @@ class Animation extends Component {
         super();
         this.state={
             skull: false,
-            glasses: false
+            glasses: false,
+            eggs: []
+
         }
     }
 
@@ -17,17 +19,6 @@ class Animation extends Component {
         setTimeout(this.hide,7000);
         setTimeout(this.glasses,8000);
         setTimeout(this.stuff,9000)
-    }
-
-    componentWillMount() {
-
-        fetch(`http://easteregg.wildcodeschool.fr/api/characters/random`)
-            .then(res => res.json())
-            .then((res) => {
-                this.setState({
-                    charac1: res.image
-                });
-            })
     }
 
     skull = () => {
@@ -49,6 +40,7 @@ class Animation extends Component {
         return (
             <div id="parent">
                 <div id="voldemort">
+                    <div id="picsEggs"></div>
                     <img src={voldemort} className="faceVoldemort" alt="initial egg"/>
                     <div className={'disclosure' + (this.state.skull ? ' skull' : '')}></div>
                     <img src={glasses} alt="glasses" className={"glasses"+(this.state.glasses ? ' moveGlasses' : '')}/>
@@ -60,7 +52,15 @@ class Animation extends Component {
                         <img src="https://media.giphy.com/media/8fteY1fGJDQYg/giphy.gif" alt="arrow"  />
                         <img src="https://media.giphy.com/media/8fteY1fGJDQYg/giphy.gif" alt="arrow" />
                     </div>
-                    <input></input>
+                    <div className="parchemin">
+                        <img src="https://files.slack.com/files-pri/T6SG2QGG2-FHPLNB52N/kisspng-parchment-friendship-bilude-art-parchemin-5b24e8e3a0f5c3.4593189615291455716593.png" alt="rules"/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis non odit sordidos, vanos, leves, futtiles? Quo minus animus a se ipse dissidens secumque discordans gustare partem ullam liquidae voluptatis et liberae potest. Duo Reges: constructio interrete. Age, inquies, ista parva sunt. Scrupulum, inquam, abeunti.</p>
+                    </div>
+                    <div id="MERDE">
+                        <a href="#"><button>Vas-y!!! cliqu & resolvent ces enimges!</button></a>
+                        <br/>
+                        <input placeholder="motQuiPasse"></input>
+                    </div>
                 </div>
             </div>
         )
