@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import Modal from 'react-responsive-modal';
+import Sound from 'react-sound';
+import ponpon from './ponpon.mp3'
+import victory from './victory.mp3'
 import './Page2.css';
 
 
@@ -9,7 +12,6 @@ class Page2 extends Component {
         super();
         this.state = {
             res1: null,
-            res1bis: true,
             res3: '',
             charac1: '',
             charac2: '',
@@ -18,7 +20,7 @@ class Page2 extends Component {
             open2: false,
             open3: false,
             open4: false,
-            open5: false,
+            victoryF: false,
             open6: false,
             openTestIcule:false,
         }
@@ -61,8 +63,14 @@ class Page2 extends Component {
                 this.setState({openTestIcule:true})}
               
         } else if (this.state.res3.toLowerCase() === 'couilles') {
-            // console.log('nul')
             alert("(☞ﾟヮﾟ)☞t'es sérieux gros dégoutant")
+            alert("(•_•) ( •_•)>⌐■-■ (⌐■_■)Je te juge")
+            alert("(ﾉ☉ヮ⚆)ﾉ ⌒*:･ﾟ✧ Je suis Choquay")
+            alert("(ಥ﹏ಥ) Je vais pleurer")
+            alert("(̿▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄ Un petit dernier pour la route")
+            
+            // return
+            // `${this.openVictory}(☞ﾟヮﾟ)☞t'es sérieux gros dégoutant`
         } else {
             console.log('rhooo')
         }
@@ -80,15 +88,7 @@ class Page2 extends Component {
             res1: false
         });
     }
-    //fin de la fonction vrai faux
-    // componentDidUpdate(res1) {
-    //     if (this.state.res1 === true) {
-    //         console.log('bravo')
-    //     } else {
-    //         console.log('looser')
-    //     }
-    // }
-    // modal 
+
     openModalCoquin = () => {
         this.setState({ open1:true })
     };
@@ -114,11 +114,11 @@ class Page2 extends Component {
     closeModalShark = () => {
         this.setState({ open4: false })
     }
-    openModalRabbit = () => {
-        this.setState({ open5: true })
+    openVictory = () => {
+        this.setState({ victoryF: true })
     };
-    closeModalRabbit = () => {
-        this.setState({ open5: false })
+    closeVictory = () => {
+        this.setState({ victoryF: false })
     }
     openModalWell = () => {
         this.setState({ open6: true })
@@ -135,6 +135,14 @@ class Page2 extends Component {
 
 
             <div className="bgStyle">
+            <Sound
+         url={this.state.victoryF? victory : ponpon}
+         playStatus={Sound.status.PLAYING}
+         volume={50}
+         autoLoad={true}
+         playbackRate={1}
+         loop={true}
+       />
 
                 <div className="hiddenRabbitPosition2" onClick={this.openModalRabbit}>
                 <Modal open={this.state.open5} onClose={this.closeModalRabbit} center>
@@ -148,16 +156,16 @@ class Page2 extends Component {
                 <img className="hiddenRabbit" src={"https://ih0.redbubble.net/image.423076575.5454/flat,800x800,070,f.jpg"} alt="rabbit" /></div>
                 <div className="hiddenRabbitPosition" onClick={this.handelClick1}><img className="hiddenRabbit" src={"https://peepoodo.github.io/peepoodo-box/avatars/lapin.png"} alt="rabbit" /></div>
                 <div>
-                    <h1 className="borderTitle"><img className="imgApi" src={this.state.charac1} alt='charac' />question 1</h1>
-                    <p className="colorP1 bgQuestion">Qu'est ce qui s'allonge et rétrécit en même temps ?</p>
+                    <h1 className="borderTitle"><img className="imgApi" src={this.state.charac1} alt='charac' />Question 1</h1>
+                    <p className=" bgQuestion">Qu'est ce qui s'allonge et rétrécit en même temps ?</p>
                    <button className="btnColor" onClick={this.openModalCoquin}>Mon Chibre</button>
                         <Modal open={this.state.open1} onClose={this.closeModalCoquin} center>
-                        <img className="imgMod" src={'https://media.giphy.com/media/xTiTnvtbvEEArLmDao/giphy.gif'}/>
+                        <img className="imgMod " src={'https://media.giphy.com/media/xTiTnvtbvEEArLmDao/giphy.gif'}/>
                         </Modal>
                     
                     <button className="btnColor" onClick={this.openModalAllu}>une allumette </button>
                         <Modal open={this.state.open2} onClose={this.closeModalAllu} center>
-                        <img className="imgMod"  src={'https://media.giphy.com/media/hNahVvxcVA9Og/giphy.gif'}/>
+                        <img className="imgMod"  src={'https://media.giphy.com/media/dh2XvZthDl7ag/giphy.gif'}/>
                         </Modal>
                     <button className="btnColor" onClick={this.openModalDal}>Dhalsim</button>
                         <Modal open={this.state.open3} onClose={this.closeModalDal} center>
@@ -186,19 +194,19 @@ class Page2 extends Component {
                         src={"https://ih0.redbubble.net/image.423076575.5454/flat,800x800,070,f.jpg"} alt="rabbit" />
                 </div>
                 <div>
-                    <h1> <img className="imgApi" src={this.state.charac2} alt='charac' />question 3</h1>
-                    <p className="colorP3 bgQuestion">Trouver le bon mot, il doit impérativement contenir toutes les lettres, les lettres sont les suivantes:
+                    <h1> <img className="imgApi" src={this.state.charac2} alt='charac' />Question 3</h1>
+                    <p className=" bgQuestion">Trouvé le bon mo, il doi impérativemen !!!!! contenir ttes les lettr, les lettr son les suivantes:
                      C, U, I, O, L, L, E, S
                      </p> 
                      {this.state.openTestIcule &&
-                     <button>Next levail bi1 jouai</button>
+                     <button onClick={this.openVictory}>Next levail bi1 jouai</button>
                      } 
 
                     <input onChange={this.handleRes3}></input>
                 </div>
                 <div>
                     <h1><img className="imgApi" src={this.state.charac3} alt='charac' />Find me</h1>
-                    <p className="colorP1 bgQuestion">trouve moi dans la page je suis trop migon
+                    <p className=" bgQuestion">trouve moi dans la page je suis trop migon
                     <img className="sizeRabbit" src={"https://peepoodo.github.io/peepoodo-box/avatars/lapin.png"}
                             alt="rabbit" /></p>
 

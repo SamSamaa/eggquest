@@ -1,38 +1,39 @@
-/* .bgStyle{
+@import url('https://fonts.googleapis.com/css?family=Raleway+Dots|VT323');
+
+.bgStyle{
     background-image: url('https://media.giphy.com/media/l2JhNN6GcRNr27lmg/giphy.gif');
     width: 100vw;
     min-height: 100vh; 
- }   */
+    font-family: 'VT323', monospace;
+    
+ }  
 h1{
     width: 300px;
     margin-left:auto;
     margin-right:auto;
     padding-bottom:12px; 
     padding-top: 12px;
-    /* border:5px purple;
-    border-style:dashed double none;
-    padding-left: 5px; */
+    font-family: 'VT323', monospace;
+    text-decoration: underline dotted red;
+    text-shadow: 0 0 0.2em #F87, 0 0 0.1em #F87
+    /* font-family: 'Raleway Dots', cursive; */
+    
+  
 }
-.colorP1{
-    color:yellowgreen;
-    font-weight: bold;
-}
-.colorP2{
-    color: yellowgreen;
-    font-weight: bold;
-}
-.colorP3{
-    color:yellowgreen;
-    font-weight: bold;
-}
-.colorP4{
-    color: yellowgreen;
-    font-weight: bold;
+p{
+    font-family: 'VT323', monospace;
+    color:red;
+    text-decoration: underline dotted black;
+    text-shadow: 0 0 0.2em yellow, 0 0 0.1em yellow;
+    font-size: 25px;
+    /* font-weight: bold; */
+
 }
 
-/* .btnColor{
+.btnColor{
     background-image: url('https://media.giphy.com/media/3ov9jHiEzknijxAD3q/giphy.gif');
-} */
+    box-shadow: 65px plum;
+}
 .btn1{
     opacity: 0.1;
 }
@@ -72,5 +73,4 @@ h1{
 .imgRabb{
     height: 100px;
     width: auto;
-
 }
