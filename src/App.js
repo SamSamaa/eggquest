@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Page1 from './Components/Page1/Page1';
+import Page4 from './Component/Page4';
 import Voldemort from './Components/Voldemort/Voldemort';
 import './App.css';
 
