@@ -4,9 +4,30 @@ import logo from '../../assets/images/logo.png';
 import './Voldemort.css';
 
 class Voldemort extends Component {
+  constructor() {
+    super();
+    this.state = {
+      explode: false
+    }
+  }
+
+  componentDidMount() {
+    setTimeout(this.explode, 10);
+    setTimeout(this.unexplode, 810);
+  }
+
+  explode = () => {
+    this.setState({ explode: true });
+  }
+
+  unexplode = () => {
+    this.setState({ explode: false });
+  }
+
   render() {
     return (
       <div className='Voldemort'>
+        <div className={this.state.explode ? 'explosion' : ''}></div>
         <div className='nav'>
           <img className='logo' src={logo} />
         </div>
@@ -64,7 +85,7 @@ class Voldemort extends Component {
             </Grid>
           </div>
           <div className='pub'>
-            <Card 
+            <Card
               image='https://www.matines.com/files/2012/04/oeuf-coque.jpg'
               header='Do you want a coque bien dure ?'
               description='Inscris toi sur bigcoque.com et rejoins de nombreux oeufs de ta région.'
