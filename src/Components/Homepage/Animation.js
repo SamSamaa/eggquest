@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './Animation.css';
 import voldemort from '../../assets/images/Voldemort.png';
 import glasses from "../../assets/images/glasses.png";
@@ -10,7 +11,6 @@ class Animation extends Component {
             skull: false,
             glasses: false,
             eggs: []
-
         }
     }
 
@@ -57,7 +57,7 @@ class Animation extends Component {
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis non odit sordidos, vanos, leves, futtiles? Quo minus animus a se ipse dissidens secumque discordans gustare partem ullam liquidae voluptatis et liberae potest. Duo Reges: constructio interrete. Age, inquies, ista parva sunt. Scrupulum, inquam, abeunti.</p>
                     </div>
                     <div id="MERDE">
-                        <a href="#"><button>Vas-y!!! cliqu & resolvent ces enimges!</button></a>
+                        <Link exact to='/page1'><button>Vas-y!!! cliqu & resolvent ces enimges!</button></Link>
                         <br/>
                         <input placeholder="motQuiPasse"></input>
                     </div>
