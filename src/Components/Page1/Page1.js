@@ -47,7 +47,7 @@ class Page1 extends Component {
         {
           this.state.win ?
             <div className='screen2'>
-
+          
             </div> 
             :
             <div className='screen1'>

@@ -1,0 +1,39 @@
+.Voldemort {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  height: 100px;
+  margin: 20px;
+}
+
+.gallery {
+  width: 100vw;
+  padding: 30px;
+  display: flex;
+}
+
+.images {
+  width: 70vw;
+}
+
+.pub {
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 100% !important;
+  height: 100% !important;
+}
