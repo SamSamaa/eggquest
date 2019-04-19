@@ -59,14 +59,13 @@ class Page4 extends Component {
         <div className='border'>
           <img src={FinalZone} alt='titre' />
         </div>
-        <div className='enigme'>         
+        <div className='enigme'>
           <img className='m1' src='http://corigif.free.fr/alphabet/alphasaignant/img/alpha_016.gif' alt='lettre' />
-         
+
           <img className='R' onClick={this.victoryOpenModal} src='http://corigif.free.fr/alphabet/alphaetoile/img/alpha_018.gif' alt='lettre' />
           <Modal classNames={true} open={this.state.victory} onClose={this.victoryCloseModal} center >
-            <div></div>
           </Modal>
-          
+
           <img className='m1' src='http://corigif.free.fr/alphabet/alphaptvert/img/alpha_005.gif' alt='lettre' />
           <img className='m1' src='http://corigif.free.fr/alphabet/alpharainbow/img/alpha_020.gif' alt='lettre' />
 
@@ -75,8 +74,13 @@ class Page4 extends Component {
           <img className='m2' src='http://corigif.free.fr/alphabet/alphaneige/img/alpha_021.gif' alt='lettre' />
 
           <img className='m2c R' onClick={this.victoryOpenModal} src='http://corigif.free.fr/alphabet/alphaetoile/img/alpha_018.gif' alt='lettre' />
-          <Modal classNames={true} open={victory} onClose={this.victoryCloseModal} center >
-            <div></div>
+          <Modal classNames={true} open={this.state.victory} onClose={this.victoryCloseModal} center >
+            <div className='solution'>
+              <img className='etoile' src='https://backgroundcheckall.com/wp-content/uploads/2018/10/christmas-star-png-transparent-background-3.png' alt='etoile' />
+              <img className='rick' src='https://media.giphy.com/media/Vuw9m5wXviFIQ/giphy.gif' alt='gif' /><h1>Félicitation</h1>
+              <h3>CODE</h3>
+              <button>Retour à l'accueil</button>
+            </div>
           </Modal>
           <img className='m3' src='http://corigif.free.fr/alphabet/alphaoursbleu/img/alpha_012.gif' alt='lettre' />
           <img className='m3' src='http://corigif.free.fr/alphabet/alphafeu/img/alpha_044.gif' alt='lettre' />
@@ -104,7 +108,8 @@ class Page4 extends Component {
               <p>Les jeunes le dise quand il n'y a rien.</p>
               <p>Il est parfois dans nos têtes ou dans nos poumons, il peut être marin ou de rien.</p>
               <p>Je suis dans l'Abécédaire, présent dans l'arrière mais au début de retour.</p>
-              <p>Ferme la fenêtre pour me trouver.</p>
+              <p>Karthus ult.</p>
+              <p>(Ferme cette fenêtre pour me trouver.)</p>
               <p>Qui suis-je ?</p>
             </div>
             <img className='sablier' src='http://www.gifgratis.net/gifs_animes/sablier/12.gif' alt='sablier' />
