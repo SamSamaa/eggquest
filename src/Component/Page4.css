@@ -1,50 +1,166 @@
-.bgImage{
-  background-image: url('https://media.giphy.com/media/KeKP4gHnQgYXC/giphy.gif'); 
+.bgImage {
+  background-image: url('https://media.giphy.com/media/KeKP4gHnQgYXC/giphy.gif');
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
-  --border-anim: red;
 }
 
-.border{
+.border {
   border: 20px ridge;
-  height: 200px;
+  height: 150px;
   margin-top: 3em;
-  padding: 0px 80px;
+  padding: 30px 0px 0px 0px;
   display: flex;
   align-items: center;
   background-image: url('https://thumbs.gfycat.com/AnguishedJauntyBluebreastedkookaburra-max-1mb.gif');
   animation-name: borderanim;
   animation-duration: 4s;
-  animation-iteration-count:infinite;
+  animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 
 @keyframes borderanim {
-  0%   {border-color: red;}
-  14%  {border-color: orange;}
-  28%  {border-color: yellow;}
-  42%  {border-color: green;}
-  56%  {border-color: cyan;}
-  70%  {border-color: blue;}
-  84%  {border-color: rgb(240, 12, 240);}
-  100% {border-color: red;}
+  0% {
+    border-color: red;
+  }
+  14% {
+    border-color: orange;
+  }
+  28% {
+    border-color: yellow;
+  }
+  42% {
+    border-color: green;
+  }
+  56% {
+    border-color: cyan;
+  }
+  71% {
+    border-color: blue;
+  }
+  86% {
+    border-color: rgb(255, 0, 255);
+  }
+  100% {
+    border-color: red;
+  }
 }
 
-.title{
-  font-family: "Comic Sans Ms", "Comic Sans", cursive;
-  font-size: 8em;
+.enigme{
+  position: fixed;
+  top:25%;
+  z-index: 50;
+  background-color: rgba(255, 255, 255, 0.363);
+  margin-top: 3em ;
+}
+
+.m2b{
+  padding-left: 3em;
+}
+
+.m2c{
+  padding-right: 3em;
+}
+
+.point{
+  width: 5em;
+  padding-left: 2em;
+}
+
+.but{
+  width:5em;
+  height: 2em;
+  top: 43%;
+  z-index: 50;
+  position: fixed;
+  border: 5px ridge;
+  font-size: 30px;
+}
+
+.border img {
   text-align: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgb(30, 255, 0)), to(rgb(255, 0, 0)));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  width: 80em;
 }
 
-.wow{
+.wow {
+  height: 30vh;
+  width: 30vw;
+  z-index: 2;
+  position: fixed;
+  bottom: 0px;
+  right: 70%;
+}
+
+.wow1 {
+  height: 40vh;
+  width: 40vw;
+  z-index: 9;
+  position: fixed;
+  bottom: 0px;
+  right: 50%;
+}
+
+.wow2 {
   height: 50vh;
   width: 50vw;
-  z-index: 5;
-  position:fixed;
-  bottom:0px;
+  z-index: 10;
+  position: fixed;
+  bottom: 0px;
+  left: 22%;
 }
+
+.wow3 {
+  height: 40vh;
+  width: 40vw;
+  z-index: 4;
+  position: fixed;
+  bottom: 0px;
+  left: 45%;
+}
+
+.wow4 {
+  height: 30vh;
+  width: 30vw;
+  z-index: 3;
+  position: fixed;
+  bottom: 0px;
+  left: 65%;
+}
+
+.superMomodal{
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+}
+
+.fouras {
+  height: 500px;
+  width: 400px;
+  left: 10px;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.sablier{
+  position: absolute;
+  height: 200px;
+  bottom: 10px;
+  right: -30px;
+  
+}
+
